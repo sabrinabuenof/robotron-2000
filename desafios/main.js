@@ -1,9 +1,11 @@
-const calcular = document.querySelector("#calcular") 
+const lista = document.querySelector('ul');
+const botaoMostrar = document.querySelector('#botaoMostrar')
+const botaoEsconder = document.querySelector('#botaoEsconder');
 
+botaoMostrar.addEventListener('click', () => {
+    lista.setAttribute('data-lista', 'mostrar')
+});
 
-calcular.addEventListener("click", () => {
-    console.log("Fui clicado.")
-})
-
-
-
+botaoEsconder.addEventListener('click', () => {
+    lista.setAttribute('data-lista', 'esconder')
+});
